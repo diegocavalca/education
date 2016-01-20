@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aSB-sT-Rcd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tarefas-->
+        <scene sceneID="f31-yH-e1d">
+            <objects>
+                <tableViewController id="IEv-8c-bXi" customClass="TaskManagerTableViewController" customModule="TaskNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Xer-h2-G83">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="TBT-yf-fiv">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TBT-yf-fiv" id="j7a-ef-Gc8">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="0Np-yv-Sds" kind="show" identifier="editTask" id="VFc-9a-25L"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IEv-8c-bXi" id="l4J-FW-WG1"/>
+                            <outlet property="delegate" destination="IEv-8c-bXi" id="Ogi-OD-ruU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tarefas" id="5XG-w6-3rV">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="yEj-3l-XFx">
+                            <connections>
+                                <segue destination="0Np-yv-Sds" kind="show" identifier="" id="qM3-65-irg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Bf0-TE-WaU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VL-9A-bYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="527"/>
+        </scene>
+        <!--Tarefa-->
+        <scene sceneID="JdA-2R-JeD">
+            <objects>
+                <viewController id="0Np-yv-Sds" customClass="TaskDetailViewController" customModule="TaskNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ARd-wK-awj"/>
+                        <viewControllerLayoutGuide type="bottom" id="cXd-wi-cQo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sQx-Ez-89C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9g-Y1-QaD">
+                                <rect key="frame" x="16" y="83" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnD-Ys-kD0">
+                                <rect key="frame" x="16" y="112" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rnD-Ys-kD0" firstAttribute="trailing" secondItem="sQx-Ez-89C" secondAttribute="trailingMargin" id="1cX-W0-dU6"/>
+                            <constraint firstItem="rnD-Ys-kD0" firstAttribute="leading" secondItem="sQx-Ez-89C" secondAttribute="leadingMargin" id="XXZ-jS-hCz"/>
+                            <constraint firstItem="a9g-Y1-QaD" firstAttribute="trailing" secondItem="sQx-Ez-89C" secondAttribute="trailingMargin" id="ek8-Ds-RqP"/>
+                            <constraint firstItem="a9g-Y1-QaD" firstAttribute="top" secondItem="ARd-wK-awj" secondAttribute="bottom" constant="19" id="f7C-OG-mLf"/>
+                            <constraint firstItem="a9g-Y1-QaD" firstAttribute="leading" secondItem="sQx-Ez-89C" secondAttribute="leadingMargin" id="oSz-gH-b5H"/>
+                            <constraint firstItem="rnD-Ys-kD0" firstAttribute="top" secondItem="a9g-Y1-QaD" secondAttribute="bottom" constant="8" id="p8U-ii-a96"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tarefa" id="pwf-fu-kTH">
+                        <barButtonItem key="rightBarButtonItem" title="Gravar" id="sL9-8w-M0H">
+                            <connections>
+                                <action selector="saveTask:" destination="0Np-yv-Sds" id="bYS-sb-UkX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="txtDescricao" destination="rnD-Ys-kD0" id="ANJ-mq-dku"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEO-xC-MF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662" y="527"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5ms-RC-jfP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S00-Iv-M5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aSB-sT-Rcd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gMo-ZV-Bqg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IEv-8c-bXi" kind="relationship" relationship="rootViewController" id="0qf-QN-ZMH"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="795" y="527"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VFc-9a-25L"/>
+    </inferredMetricsTieBreakers>
+</document>

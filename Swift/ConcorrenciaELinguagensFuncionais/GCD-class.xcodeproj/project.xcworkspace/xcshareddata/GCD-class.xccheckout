@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D7D14970-77AC-4A14-8797-00E2460F8A1A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GCD-class</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BC453BE8058AE96F96289D06868098734AB92FE4</key>
+		<string>https://github.com/DesenvolvimentoiOSemSwift/ConcorrenciaELinguagensFuncionais.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GCD-class.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BC453BE8058AE96F96289D06868098734AB92FE4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DesenvolvimentoiOSemSwift/ConcorrenciaELinguagensFuncionais.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BC453BE8058AE96F96289D06868098734AB92FE4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BC453BE8058AE96F96289D06868098734AB92FE4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ConcorrenciaELinguagensFuncionais</string>
+		</dict>
+	</array>
+</dict>
+</plist>
