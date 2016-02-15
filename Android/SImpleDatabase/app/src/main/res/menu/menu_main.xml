@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.diegocavalca.simpledatabase.MainActivity">
+
+    <item
+        android:id="@+id/action_new"
+        android:orderInCategory="100"
+        android:title="@string/action_new"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_report"
+        android:orderInCategory="100"
+        android:title="@string/action_report"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+</menu>

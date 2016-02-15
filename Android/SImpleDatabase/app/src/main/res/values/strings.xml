@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Simple Database</string>
+    <string name="title_activity_register">New Register</string>
+
+    <string name="action_new">New</string>
+    <string name="action_report">Report</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_report">Report</string>
+    <string name="btnSaveRegister">Save</string>
+    <string name="new_register_success">Registro salvo com sucesso!</string>
+</resources>

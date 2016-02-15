@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Contatos">
+
+    <item
+        android:id="@+id/item_novo"
+        android:title="@string/item_novo"
+        app:showAsAction="always" />
+
+</menu>

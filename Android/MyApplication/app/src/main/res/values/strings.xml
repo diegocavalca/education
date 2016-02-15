@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hello World</string>
+
+    <string name="hello_world">Hello world, Diego!</string>
+    <string name="action_settings">Settings</string>
+    <string name="textBtnVerify">Verificar</string>
+
+    <string name="salutationMsg">Seja bem-vindo,</string>
+</resources>
