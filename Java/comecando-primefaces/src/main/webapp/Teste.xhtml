@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta charset="UTF-8"></meta>
+	<title>Hi, PrimeFaces!</title>
+	
+	<script>
+		PrimeFaces.locales['pt_BR'] = {  
+	            closeText: 'Fechar',  
+	            prevText: 'Anterior',  
+	            nextText: 'Próximo',  
+	            currentText: 'Começo',  
+	            monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],  
+	            monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun', 'Jul','Ago','Set','Out','Nov','Dez'],  
+	            dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],  
+	            dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],  
+	            dayNamesMin: ['D','S','T','Q','Q','S','S'],  
+	            weekHeader: 'Semana',  
+	            firstDay: 1,  
+	            isRTL: false,  
+	            showMonthAfterYear: false,  
+	            yearSuffix: '',  
+	            timeOnlyTitle: 'Só Horas',  
+	            timeText: 'Tempo',  
+	            hourText: 'Hora',  
+	            minuteText: 'Minuto',  
+	            secondText: 'Segundo',  
+	            currentText: 'Hoje',  
+	            ampm: false,  
+	            month: 'Mês',  
+	            week: 'Semana',  
+	            day: 'Dia',  
+	            allDayText : 'Todo Dia'  
+	        };
+	</script>
+</h:head>
+<h:body>
+
+	<p:panel header="Cadastro de Cliente">
+		
+		<h:panelGrid columns="2">
+			<p:outputLabel value="Nome"/>
+			<p:inputText/>
+			
+			<p:outputLabel value="CPF"/>
+			<p:inputMask mask="999.999.999-99"/>
+			
+			<p:outputLabel value="Data de Nascimento"/>
+			<p:calendar pattern="dd/MM/yyyy" mask="99/99/9999" locale="pt_BR" showButtonPanel="true"/>
+		
+			<p:outputLabel/>
+			<p:commandButton value="Salvar"/>	
+		</h:panelGrid>
+	
+	</p:panel>
+	
+</h:body>
+</html>
