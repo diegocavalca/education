@@ -24,6 +24,10 @@ print "- - - - -"
 #########################################################
 ### your code goes here ###
 
+print "-----------------------------------------"
+print "- - - - - - - - RESULTS - - - - - - - - -"
+print "-----------------------------------------"
+
 from sklearn.svm import SVC
 # clf = SVC(kernel='linear') # ---> Accuracy: 88% (1% data training, no C value)
 # clf = SVC(kernel='rbf') # ---> Accuracy 68% (1% data training, no C value)
@@ -39,9 +43,8 @@ clf = SVC(kernel='rbf', C=10000) # ---> Accuracy: 89% (1% data training) / 99% (
 # Training...
 t0 = time()
 clf.fit(features_train, labels_train)
-print ">>> training time:", round(time()-t0, 3), "s"
-
-print "- - - - -"
+print ">>> Training time:", round(time()-t0, 3), "s"
+print " "
 
 # Predicting...
 t0 = time()

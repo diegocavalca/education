@@ -15,6 +15,9 @@ from time import time
 sys.path.append("../tools/")
 from email_preprocess import preprocess
 
+print "-----------------------------------------"
+print "- - - - - - - - RESULTS - - - - - - - - -"
+print "-----------------------------------------"
 
 ### features_train and features_test are the features for the training
 ### and testing datasets, respectively
