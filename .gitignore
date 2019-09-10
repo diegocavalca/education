@@ -1,4 +1,7 @@
-
+phd-thesis/.idea
+phd-thesis/.ipynb_checkpoints
+phd-thesis/@
+phd-thesis/datasets
 ud120-projects/.vs/slnx.sqlite
 ud120-projects/.vs/ud120-projects/v15/.suo
 ud120-projects/choose_your_own/class_vis.py
