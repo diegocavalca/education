@@ -2,6 +2,7 @@ phd-thesis/.idea
 phd-thesis/.ipynb_checkpoints
 phd-thesis/@
 phd-thesis/datasets
+phd-thesis/benchmarkings/Imaging-NILM-time-series/datasets/
 ud120-projects/.vs/slnx.sqlite
 ud120-projects/.vs/ud120-projects/v15/.suo
 ud120-projects/choose_your_own/class_vis.py
@@ -4715,3 +4716,4 @@ ud120-projects/tools/python2_lesson14_keys.pkl
 ud120-projects/tools/startup.py
 ud120-projects/tools/word_data.pkl
 ud120-projects/validation/validate_poi.py
+phd-thesis/nilmtk-repo/
