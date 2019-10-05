@@ -1,7 +1,10 @@
 phd-thesis/.idea
 phd-thesis/.ipynb_checkpoints
 phd-thesis/@
-phd-thesis/datasets
+phd-thesis/datasets/REDD
+phd-thesis/datasets/MotionSense
+phd-thesis/datasets/hipotese1-recurrenceplot-vggembedding/**/*.png
+phd-thesis/datasets/hipotese1-recurrenceplot-vggembedding/**/*.npy
 phd-thesis/benchmarkings/Imaging-NILM-time-series/datasets/
 ud120-projects/.vs/slnx.sqlite
 ud120-projects/.vs/ud120-projects/v15/.suo
